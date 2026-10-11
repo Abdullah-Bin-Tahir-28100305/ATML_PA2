@@ -1,0 +1,62 @@
+{
+  "name": "standard",
+  "adapter": "outputs/task1_dpo/standard",
+  "beta": 0.1,
+  "eval_file": "data/dpo_standard_eval.jsonl",
+  "dropped_long_prompt_ids": [
+    "99a843a7d5621de7f5660c5de46249dc47af2796ad9e8e81a4e11ca699ab2748",
+    "f8603e835872e1c804ef8544b8a345f7bb4ff0925b11d3da1d6648cb045fbade",
+    "175ce5926626b171f863baf48b4337e2a17a5fcbf04b571e1e0612c7bd12d365",
+    "fb2604c2ddf9bd32e3c8024fa9231c380053d0879e36fcb2a65f210d7ae850e3",
+    "8ae54306663e1244ce441e11a1a615c75f0642e703802706ec13a596bec9fd9a",
+    "f32980bf904020cd42532d2c16795204fd4edff4db3567e207bb8e23b26c1d52",
+    "d7baf0d12770c7c089820ef841ca71a51f8ed5f9138ac00ab318f5c6b044ae4f",
+    "8199434086917005eb12e429e46039f7c298eaa5f27f5c344e336ac7f06cb904",
+    "6f0d9a5c3f6b412c13c065f75b30d4341e88b6ebe13859cd28ce373db6e41f36",
+    "2708b4a670f35fd3c1065f430d700cfe7cb2d20aeaa3ba7214e3cb411d132648"
+  ],
+  "pairs": {
+    "overall": {
+      "n": 290,
+      "preference_accuracy": 0.6344827586206897,
+      "tie_rate": 0.0,
+      "dpo_loss": 0.6741942036768486,
+      "margin_mean": 0.4483986458387868,
+      "margin_std": 1.6076835566219227,
+      "chosen_logratio_mean": -0.49140393340574773,
+      "rejected_logratio_mean": -0.9398025792734376
+    }
+  },
+  "generation": {
+    "n": 300,
+    "reward_mean": 1.3216118367513021,
+    "reward_std": 1.4075786709723273,
+    "kl_token_mean": -0.0001482766005854879,
+    "kl_seq_mean": -0.022951240749292386,
+    "kl_seq_se": 0.026269634785064163,
+    "kl_exact_token_mean": 0.0004124700811850999,
+    "kl_exact_seq_mean": 0.063844868966371,
+    "entropy_token_mean": 0.9492031194257463,
+    "sampled_entropy_token_mean": 0.7693930550357903,
+    "length": {
+      "n": 300,
+      "mean": 154.78666666666666,
+      "std": 105.4919640962708,
+      "median": 206.0,
+      "q25": 37.75,
+      "q75": 256.0,
+      "iqr": 218.25,
+      "min": 2.0,
+      "max": 256.0
+    },
+    "eos_rate": 0.5566666666666666,
+    "truncation_rate": 0.44333333333333336,
+    "decoding": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "do_sample": true,
+      "max_new_tokens": 256
+    }
+  },
+  "eval_wall_clock_sec": 327.34010322099994
+}

@@ -1,0 +1,7 @@
+{
+  "judge_model": "Qwen/Qwen2.5-3B-Instruct",
+  "max_new_tokens": 64,
+  "decoding": "greedy",
+  "batch_size": 8,
+  "quantized_4bit": true
+}

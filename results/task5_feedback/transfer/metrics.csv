@@ -1,0 +1,4 @@
+policy,exact_accuracy,format_compliance,mean_tokens,std_tokens,truncation_rate,ai_win_rate_vs_sft,verifier_judge_agreement_vs_sft
+sft,0.44,0.57,163.81,72.04313915981174,0.0,,
+rlvr,0.45,0.58,163.09,70.62153991524116,0.0,0.51,0.77
+rlaif,0.42,0.56,165.87,73.65808238068652,0.0,0.495,0.77

@@ -1,0 +1,11 @@
+category,kind,mechanism,n,better_rate,tie_rate,wrong_preference_rate,orientation_consistency
+reasoning_corruption,reasoning,rlvr,20,0.0,1.0,0.0,
+reasoning_corruption,reasoning,rlaif,20,0.0,1.0,0.0,1.0
+persuasive_filler,reasoning,rlvr,20,0.0,1.0,0.0,
+persuasive_filler,reasoning,rlaif,20,0.0,0.75,0.25,1.0
+wrong_final,outcome,rlvr,20,1.0,0.0,0.0,
+wrong_final,outcome,rlaif,20,0.0,1.0,0.0,0.9
+gold_distractor,outcome,rlvr,20,1.0,0.0,0.0,
+gold_distractor,outcome,rlaif,20,0.25,0.75,0.0,0.7
+conflict_correct_final_bad_reasoning_vs_good_reasoning_wrong_final,conflict,rlvr,20,1.0,0.0,0.0,
+conflict_correct_final_bad_reasoning_vs_good_reasoning_wrong_final,conflict,rlaif,20,0.05,0.95,0.0,0.95

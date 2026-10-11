@@ -1,0 +1,7 @@
+policy,decoding,n,compliance_rate,words_over_limit_mean,truncation_rate,words_mean,tokens_mean
+length_balanced,greedy,10,0.4,5.9,0.0,38.5,45.0
+length_balanced,sampled,40,0.425,11.675,0.0,44.0,51.975
+sft,greedy,10,0.5,8.2,0.0,40.6,47.8
+sft,sampled,40,0.525,10.975,0.0,43.5,51.375
+standard,greedy,10,0.4,8.2,0.0,41.1,48.0
+standard,sampled,40,0.475,10.85,0.0,42.775,50.475

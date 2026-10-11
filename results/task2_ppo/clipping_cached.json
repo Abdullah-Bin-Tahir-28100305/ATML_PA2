@@ -1,0 +1,298 @@
+{
+  "n_cached": 32,
+  "n_aligned": 32,
+  "skipped": [],
+  "kl_beta": 0.1,
+  "minibatch_size": 8,
+  "ppo_epochs": 2,
+  "learning_rate": 3e-06,
+  "advantage_whitening": true,
+  "static_midpoint_vs_cache": {
+    "ratio_stats": {
+      "mean_abs_log_ratio": 0.06620018184185028,
+      "max_abs_log_ratio": 19.93805694580078,
+      "ratio_q01": 0.3793502748012543,
+      "ratio_q99": 1.3418997526168823
+    },
+    "per_epsilon": {
+      "0.05": {
+        "clip_fraction": 0.1540730595588684,
+        "affected_fraction": 0.07658270746469498,
+        "clipped_surrogate": -0.011340300552546978,
+        "unclipped_surrogate": 0.0003473166434559971
+      },
+      "0.2": {
+        "clip_fraction": 0.04129793494939804,
+        "affected_fraction": 0.01996823213994503,
+        "clipped_surrogate": -0.007853551767766476,
+        "unclipped_surrogate": 0.0003473166434559971
+      },
+      "0.5": {
+        "clip_fraction": 0.02098933607339859,
+        "affected_fraction": 0.010097571648657322,
+        "clipped_surrogate": -0.005314709153026342,
+        "unclipped_surrogate": 0.0003473166434559971
+      }
+    }
+  },
+  "after_updates": {
+    "0.05": {
+      "steps": [
+        {
+          "epoch": 0,
+          "minibatch_start": 0,
+          "grad_norm": 0.14212700724601746,
+          "clip_fraction": 0.09756097197532654,
+          "affected_fraction": 0.049840934574604034,
+          "clipped_surrogate": 0.06920351088047028,
+          "unclipped_surrogate": 0.07038383930921555
+        },
+        {
+          "epoch": 0,
+          "minibatch_start": 8,
+          "grad_norm": 0.08846089243888855,
+          "clip_fraction": 0.10661764442920685,
+          "affected_fraction": 0.05514705926179886,
+          "clipped_surrogate": 0.030198341235518456,
+          "unclipped_surrogate": 0.03127388656139374
+        },
+        {
+          "epoch": 0,
+          "minibatch_start": 16,
+          "grad_norm": 0.09442209452390671,
+          "clip_fraction": 0.1572226583957672,
+          "affected_fraction": 0.07342378050088882,
+          "clipped_surrogate": -0.04549717903137207,
+          "unclipped_surrogate": -0.03778020292520523
+        },
+        {
+          "epoch": 0,
+          "minibatch_start": 24,
+          "grad_norm": 0.08385255932807922,
+          "clip_fraction": 0.19300779700279236,
+          "affected_fraction": 0.09650389850139618,
+          "clipped_surrogate": -0.03158722445368767,
+          "unclipped_surrogate": -0.00831842515617609
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 0,
+          "grad_norm": 0.10134555399417877,
+          "clip_fraction": 0.16816817224025726,
+          "affected_fraction": 0.08151008188724518,
+          "clipped_surrogate": -0.009832695126533508,
+          "unclipped_surrogate": -0.0010367606300860643
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 8,
+          "grad_norm": 0.0862303152680397,
+          "clip_fraction": 0.08583690971136093,
+          "affected_fraction": 0.04482594132423401,
+          "clipped_surrogate": 0.027564559131860733,
+          "unclipped_surrogate": 0.028460411354899406
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 16,
+          "grad_norm": 0.10330164432525635,
+          "clip_fraction": 0.2545776665210724,
+          "affected_fraction": 0.12108682841062546,
+          "clipped_surrogate": -0.02016548253595829,
+          "unclipped_surrogate": 0.00034217024222016335
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 24,
+          "grad_norm": 0.0953139141201973,
+          "clip_fraction": 0.13442257046699524,
+          "affected_fraction": 0.06869661808013916,
+          "clipped_surrogate": -0.037354275584220886,
+          "unclipped_surrogate": -0.02025953307747841
+        }
+      ],
+      "final_full_batch": {
+        "clip_fraction": 0.15509416162967682,
+        "affected_fraction": 0.0770365297794342,
+        "clipped_surrogate": -0.011280165985226631,
+        "unclipped_surrogate": 0.0004095735785085708,
+        "mean_abs_log_ratio": 0.06622710824012756,
+        "kl_old_to_new_token_mean": 0.028681520372629166
+      },
+      "mean_clip_fraction_over_steps": 0.14967679884284735,
+      "mean_affected_fraction_over_steps": 0.07387939281761646
+    },
+    "0.2": {
+      "steps": [
+        {
+          "epoch": 0,
+          "minibatch_start": 0,
+          "grad_norm": 0.1607201099395752,
+          "clip_fraction": 0.001060445443727076,
+          "affected_fraction": 0.001060445443727076,
+          "clipped_surrogate": 0.07037824392318726,
+          "unclipped_surrogate": 0.07038383930921555
+        },
+        {
+          "epoch": 0,
+          "minibatch_start": 8,
+          "grad_norm": 0.09615080058574677,
+          "clip_fraction": 0.0010504202218726277,
+          "affected_fraction": 0.0005252101109363139,
+          "clipped_surrogate": 0.031200537458062172,
+          "unclipped_surrogate": 0.031221771612763405
+        },
+        {
+          "epoch": 0,
+          "minibatch_start": 16,
+          "grad_norm": 0.10264094918966293,
+          "clip_fraction": 0.04429369419813156,
+          "affected_fraction": 0.020750200375914574,
+          "clipped_surrogate": -0.04192819446325302,
+          "unclipped_surrogate": -0.03765193745493889
+        },
+        {
+          "epoch": 0,
+          "minibatch_start": 24,
+          "grad_norm": 0.09154929965734482,
+          "clip_fraction": 0.07165559381246567,
+          "affected_fraction": 0.03467205911874771,
+          "clipped_surrogate": -0.02597946859896183,
+          "unclipped_surrogate": -0.00822535902261734
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 0,
+          "grad_norm": 0.11126108467578888,
+          "clip_fraction": 0.048048049211502075,
+          "affected_fraction": 0.023166023194789886,
+          "clipped_surrogate": -0.005759422667324543,
+          "unclipped_surrogate": -0.000876503181643784
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 8,
+          "grad_norm": 0.08929632604122162,
+          "clip_fraction": 0.0004768717335537076,
+          "affected_fraction": 0.0004768717335537076,
+          "clipped_surrogate": 0.028430161997675896,
+          "unclipped_surrogate": 0.028441332280635834
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 16,
+          "grad_norm": 0.11418362706899643,
+          "clip_fraction": 0.08564677834510803,
+          "affected_fraction": 0.03898405283689499,
+          "clipped_surrogate": -0.01339778583496809,
+          "unclipped_surrogate": 0.00025175538030453026
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 24,
+          "grad_norm": 0.10548572242259979,
+          "clip_fraction": 0.038989972323179245,
+          "affected_fraction": 0.0200519859790802,
+          "clipped_surrogate": -0.0343865342438221,
+          "unclipped_surrogate": -0.020403753966093063
+        }
+      ],
+      "final_full_batch": {
+        "clip_fraction": 0.041184477508068085,
+        "affected_fraction": 0.019854776561260223,
+        "clipped_surrogate": -0.007770382333546877,
+        "unclipped_surrogate": 0.0004148515872657299,
+        "mean_abs_log_ratio": 0.06619708985090256,
+        "kl_old_to_new_token_mean": 0.028747497126460075
+      },
+      "mean_clip_fraction_over_steps": 0.0364027281611925,
+      "mean_affected_fraction_over_steps": 0.017460856099205557
+    },
+    "0.5": {
+      "steps": [
+        {
+          "epoch": 0,
+          "minibatch_start": 0,
+          "grad_norm": 0.1609186977148056,
+          "clip_fraction": 0.0,
+          "affected_fraction": 0.0,
+          "clipped_surrogate": 0.07038383930921555,
+          "unclipped_surrogate": 0.07038383930921555
+        },
+        {
+          "epoch": 0,
+          "minibatch_start": 8,
+          "grad_norm": 0.09675408154726028,
+          "clip_fraction": 0.0,
+          "affected_fraction": 0.0,
+          "clipped_surrogate": 0.0312285628169775,
+          "unclipped_surrogate": 0.0312285628169775
+        },
+        {
+          "epoch": 0,
+          "minibatch_start": 16,
+          "grad_norm": 0.1016366183757782,
+          "clip_fraction": 0.02114924229681492,
+          "affected_fraction": 0.009976057335734367,
+          "clipped_surrogate": -0.03924662992358208,
+          "unclipped_surrogate": -0.037558384239673615
+        },
+        {
+          "epoch": 0,
+          "minibatch_start": 24,
+          "grad_norm": 0.09735164046287537,
+          "clip_fraction": 0.03756139799952507,
+          "affected_fraction": 0.018202831968665123,
+          "clipped_surrogate": -0.02144591324031353,
+          "unclipped_surrogate": -0.008254203014075756
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 0,
+          "grad_norm": 0.11603284627199173,
+          "clip_fraction": 0.02273702248930931,
+          "affected_fraction": 0.010725011117756367,
+          "clipped_surrogate": -0.002726180013269186,
+          "unclipped_surrogate": -0.0009133000858128071
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 8,
+          "grad_norm": 0.09132745862007141,
+          "clip_fraction": 0.0,
+          "affected_fraction": 0.0,
+          "clipped_surrogate": 0.02848014049232006,
+          "unclipped_surrogate": 0.02848014049232006
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 16,
+          "grad_norm": 0.11610978841781616,
+          "clip_fraction": 0.037802718579769135,
+          "affected_fraction": 0.01653868891298771,
+          "clipped_surrogate": -0.00828512292355299,
+          "unclipped_surrogate": 0.00023531814804300666
+        },
+        {
+          "epoch": 1,
+          "minibatch_start": 24,
+          "grad_norm": 0.10656171292066574,
+          "clip_fraction": 0.024507984519004822,
+          "affected_fraction": 0.012996657751500607,
+          "clipped_surrogate": -0.03185240179300308,
+          "unclipped_surrogate": -0.02024366520345211
+        }
+      ],
+      "final_full_batch": {
+        "clip_fraction": 0.02098933607339859,
+        "affected_fraction": 0.010097571648657322,
+        "clipped_surrogate": -0.005192804150283337,
+        "unclipped_surrogate": 0.0004740992735605687,
+        "mean_abs_log_ratio": 0.06617678701877594,
+        "kl_old_to_new_token_mean": 0.028708551079034805
+      },
+      "mean_clip_fraction_over_steps": 0.017969795735552907,
+      "mean_affected_fraction_over_steps": 0.008554905885830522
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "n_responses": 24,
+  "kl_per_token": {
+    "float16": {
+      "grpo_midpoint": 1.0764353714199344e-05,
+      "grpo_midpoint_x2": 1.1378312117791384e-05,
+      "ppo_midpoint": 1.079509786659996e-05,
+      "task3_standard": 1.0876743582548849e-05,
+      "task1_dpo_standard": 0.0003181451613191452
+    },
+    "float32": {
+      "grpo_midpoint": 2.3514746858260034e-07,
+      "grpo_midpoint_x2": 8.827949827827112e-07,
+      "ppo_midpoint": 1.9783698959264213e-07,
+      "task3_standard": 4.495607600217357e-07,
+      "task1_dpo_standard": 0.0003144237068140466
+    }
+  }
+}

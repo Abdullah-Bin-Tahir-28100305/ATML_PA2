@@ -112,6 +112,8 @@ python -m task4_safety.generate_responses --config configs/feedback.yaml        
 python -m task4_safety.judge_responses    --config configs/feedback.yaml        # fixed Qwen2.5-3B judge, cached + resumable
 python -m task4_safety.make_audit_sheet   --config configs/feedback.yaml        # blinded sheet for the fixed 60 audit prompts
 #   -> label results/task4_safety/manual_audit_sheet.csv by hand, save it as manual_audit_labels.csv
+#   (used here: 60 prompts x 4 policies = 240 rows; task4_safety.expand_audit_240 pre-fills labels carried over
+#    from an earlier 60-row rotate audit and exact-duplicate responses, marked in the prefill_source column)
 python -m task4_safety.evaluate_safety    --config configs/feedback.yaml
 ```
 Outputs in `results/task4_safety/`: `generated_*.jsonl`, `judged_*.jsonl`, `safety_summary.csv`,
